@@ -5,6 +5,7 @@
 </template>
 
 <script>
+import { bus } from '../main';
 
 export default {
   props: {
@@ -20,7 +21,9 @@ export default {
   },
   methods: {
     changeTitle: function () {
-      this.title = "Vue Wizards";
+      // this.$emit('changeTitle', 'Vue Wizards');
+      this.title = 'Vue Wizards';
+      bus.$emit('titleChanged', this.title);
     }
   }
 }
@@ -29,7 +32,7 @@ export default {
 
 <style scoped>
 header{
-  background: lightskyblue;
+  background: crimson;
   padding: 10px;
 }
 h1{
