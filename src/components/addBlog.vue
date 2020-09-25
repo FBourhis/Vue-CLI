@@ -12,7 +12,7 @@
       <p>Blog title: </p>
       <p>{{ blog.title }}</p>
       <p>Blog content: </p>
-      <p>{{ blog.content }}</p>
+      <p>{{ blog.content }} </p>
     </div>
   </div>
 </template>
